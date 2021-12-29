@@ -7,14 +7,14 @@ function App() {
   const [getMessage, setGetMessage] = useState({})
 
   useEffect(()=>{
-    axios.get('https://react-flask-tutorial.herokuapp.com/flask/hello').then(response => {
+    axios.get('https://react-flask-tut.herokuapp.com/flask/hello').then(response => {
       console.log("SUCCESS", response)
       setGetMessage(response)
     }).catch(error => {
       console.log(error)
     })
 
-    // axios.get('http://localhost:5000/flask/hello').then(response => {
+    // axios.get('http://127.0.0.1:5000/flask/hello').then(response => {
     //   console.log("SUCCESS", response)
     //   setGetMessage(response)
     // }).catch(error => {
